@@ -118,7 +118,7 @@ ussd_menu = {
 
 
 # Handling USSD callback from Africa's Talking
-@app.route('/ussd-callback', methods=['POST'])
+@app.route('/', methods=['POST'])
 def ussd_callback():
     try:
         logging.info(f"received data: {request.data}")
